@@ -1,0 +1,281 @@
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #002B5B, #0F4C75);
+  color: #f8f8f8;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-section {
+  flex: 1;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #1B263B;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1B263B;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #FFD700;
+    margin: 0;
+}
+
+.header-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #FFD700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8f8f8;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+nav a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-color: #FFD700;
+}
+
+nav a i {
+    margin-right: 8px; /* Ajoute un espace entre l'icône et le texte */
+    font-size: 1.2em; /* Ajuste la taille de l'icône */
+    vertical-align: middle; /* Aligne les icônes avec le texte */
+    color: #FFD700; /* Même couleur que les liens */
+    transition: 0.3s;
+}
+
+nav a:hover i {
+    color: #fff; /* Change la couleur de l'icône au survol */
+}
+
+
+/* Accueil */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 40px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centrer le texte */
+    height: 200px; /* Assure une hauteur fixe */
+    overflow: hidden; /* Empêche les débordements */
+    background-size: cover; /* Ajuste l'image pour couvrir tout le cadre */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.grid-item .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #0074D9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #0053A4;
+    transform: scale(1.05);
+}
+
+/* Section Compétences */
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Pour occuper toute la hauteur de la fenêtre */
+    padding: 20px;
+    gap: 15px; /* Espacement entre les éléments */
+}
+
+.content-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.content-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-section ul li {
+    font-size: 1.2rem;
+    color: #f8f8f8;
+}
+/* Section Présentation */
+#presentation-box {
+    background-image: url('presentation.jpg');
+    background-size: cover; /* Pour couvrir toute la zone */
+    background-position: center; /* Centrer l'image */
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Section Compétences */
+#competences-box {
+    background-image: url('competences.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8; /* Couleur du texte */
+    text-align: center;
+}
+
+/* Section Projets */
+#projets-box {
+    background-image: url('projets.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8; /* Couleur du texte */
+    text-align: center;
+}
+
+/* Section Contact */
+#contact-box {
+    background-image: url('contact.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8f8f8; /* Couleur du texte */
+    text-align: center;
+}
+section#projets img {
+    width: 200px;  /* Fixe la largeur à 200px */
+    height: 150px; /* Fixe la hauteur à 150px */
+    object-fit: cover; /* Recadre l'image pour qu'elle remplisse le conteneur sans déformation */
+    border-radius: 10px; /* Coins arrondis, si nécessaire */
+}
+.timeline-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #FFD700; /* jaune */
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.timeline-text {
+  position: absolute;
+  width: 45%;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  color: #f8f8f8;
+  font-size: 1rem;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}

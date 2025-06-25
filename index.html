@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Yoann BROCHARD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="page-container">
+    <!-- En-tête -->
+    <header>
+        <h1>Yoann BROCHARD</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="#" onclick="showSection('presentation')"><i class="fas fa-user"></i> Présentation</a></li>
+                <li><a href="#" onclick="showSection('competences')"><i class="fas fa-code"></i> Compétences</a></li>
+                <li><a href="#" onclick="showSection('projets')"><i class="fas fa-folder-open"></i> Projets</a></li>
+                <li><a href="#" onclick="showSection('stages')"><i class="fas fa-briefcase"></i> Stages</a></li>
+                <li><a href="#" onclick="showSection('formations')"><i class="fas fa-graduation-cap"></i> Formations</a></li>
+                <li><a href="#" onclick="showSection('cv')"><i class="fas fa-file-alt"></i> CV</a></li>
+                <li><a href="#" onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#" onclick="showSection('veille')"><i class="fas fa-satellite-dish"></i> Veille Technologique</a></li>
+                <li><a href="#" onclick="showSection('excel')"><i class="fas fa-file-excel"></i> Tableau de Synthèse</a></li>
+            </ul>
+        </nav>
+        <img src="profile-small.jpg" alt="Photo de Yoann" class="header-profile-pic">
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="home" class="content-section">
+        <div class="grid-container">
+            <div class="grid-item" onclick="showSection('presentation')" style="background-image: url('presentation.jpg');">
+                <div class="overlay">Présentation</div>
+            </div>
+            <div class="grid-item" onclick="showSection('competences')" style="background-image: url('competence.jpg');">
+                <div class="overlay">Compétences</div>
+            </div>
+            <div class="grid-item" onclick="showSection('projets')" style="background-image: url('projet.jpg');">
+                <div class="overlay">Projets</div>
+            </div>
+            <div class="grid-item" onclick="showSection('contact')" style="background-image: url('contact.jpg');">
+                <div class="overlay">Contact</div>
+            </div>
+            <div class="grid-item" onclick="showSection('stages')" style="background-image: url('stages.jpg');">
+                <div class="overlay">Stages</div>
+            </div>
+            <div class="grid-item" onclick="showSection('formations')" style="background-image: url('formations.jpg');">
+                <div class="overlay">Formations</div>
+            </div>
+            <div class="grid-item" onclick="showSection('cv')" style="background-image: url('cv.jpg');">
+                <div class="overlay">CV</div>
+            </div>
+            <div class="grid-item" onclick="showSection('veille')" style="background-image: url('veille.jpg');">
+                <div class="overlay">Veille Technologique</div>
+            </div>
+            <div class="grid-item" onclick="showSection('excel')" style="background-image: url('excel.jpg');">
+                <div class="overlay">Tableau de Synthèse</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section id="presentation" class="content-section" style="display: none;">
+        <h2>Présentation</h2>
+        <p>Depuis que je suis jeune, j’ai toujours été curieux de comprendre comment fonctionne l’informatique. Qu’il s’agisse des logiciels, des réseaux, ou même des lignes de code qui structurent les sites web, j’ai rapidement développé une passion pour cet univers. C’est cette curiosité qui m’a conduit à m’orienter vers un BTS SIO (option SISR), afin d’approfondir mes connaissances et de transformer cette passion en compétence concrète.</p>
+        <p>En dehors de l’informatique, je suis un grand amateur de jeux vidéo. J’aime autant les expériences immersives que les jeux plus analytiques, et je prends plaisir à découvrir de nouveaux univers virtuels. La musique occupe aussi une place importante dans mon quotidien, que ce soit en l’écoutant ou en en créant moi-même. J’apprécie particulièrement les styles qui mélangent l’énergie du rap avec des touches funk ou électroniques.</p>
+        <p>Côté cinéma et séries, je suis un grand passionné. Parmi mes œuvres préférées, on retrouve Star Wars, Le Mentalist, Stranger Things, Jurassic World, Mission Impossible, ou encore Bullet Train. J’aime les histoires bien construites, les personnages marquants et les ambiances fortes.</p>
+        <p>J’ai aussi un amour profond pour les animaux, et surtout pour les chats. Ma chatte, Maguy, fait partie intégrante de ma vie et occupe une place spéciale dans mon quotidien.
+Enfin, même si je n’ai pas encore eu l’occasion de voyager à l’étranger, c’est un rêve que je garde précieusement. J’aimerais découvrir de nombreux pays, avec une attirance particulière pour le Japon, un pays dont la culture me fascine autant que son esthétique.</p>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="content-section" style="display: none;">
+        <h2>Compétences</h2>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Réseaux et sécurité informatique</li>
+        </ul>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="content-section" style="display: none;">
+        <h2>Mes projets</h2>
+
+        <article>
+            <h3>Projet Python</h3>
+            <img src="python.png" alt="Projet Python" style="width: 200px; height: auto; border-radius: 10px;">
+            <p><strong>Contexte :</strong><br>
+            La société fictive STESIO souhaite se conformer aux obligations légales relatives à l'utilisation d'Internet sur le lieu de travail. Pour ce faire, elle a mis en place un proxy permettant de journaliser tous les accès web effectués par ses salariés. Le fichier de log généré (log_proxy.txt) contient des informations telles que l’adresse IP, la date, l’heure, la commande HTTP (GET ou POST), ainsi que les URL des éléments consultés (pages, images, etc.).
+            À partir de ces journaux volumineux, le responsable du système d'information souhaite produire des statistiques telles que :
+            Les sites les plus consultés,
+            La liste des utilisateurs les plus consommateurs,
+            Et dans des cas spécifiques (ex. : enquête de police), pouvoir répondre à des requêtes précises du type : "Qui a consulté tel site, à telle date et telle heure ?"
+            Pour répondre à ces besoins, une base de données Oracle a été conçue avec les tables suivantes :
+            SALARIES(num, nom, prenom, adresseIP)
+            PROXY(id, adresseIP, jourheure, URL)
+            En parallèle, STESIO souhaite également automatiser la création des comptes utilisateurs du SGBD à partir d’un annuaire Windows. Un script Python est utilisé pour lire un fichier texte contenant la liste des utilisateurs, puis générer automatiquement les commandes SQL de création de comptes.
+            </p>
+
+            <p><strong>Compétences mobilisées :</strong></p>
+            <ul>
+            <li>A1.1.1 – Analyse du cahier des charges d’un service à produire</li>
+            <li>A1.2.2 – Rédaction des spécifications techniques de la solution</li>
+            <li>A1.2.4 – Détermination des tests nécessaires à la validation d’un service</li>
+            <li>A1.4.1 – Participation à un projet</li>
+            <li>A1.4.2 – Évaluation des indicateurs de suivi et justification des écarts</li>
+            <li>A4.1.3 – Conception ou adaptation d’une base de données</li>
+            <li>A4.1.6 – Gestion des environnements de développement et de test</li>
+            <li>A4.1.8 – Réalisation des tests nécessaires à la validation</li>
+            <li>A4.1.10 – Rédaction d’une documentation d’utilisation</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>Projet GSB</h3>
+        <img src="gsb.png" alt="Projet GSB" style="width: 200px; height: auto; border-radius: 10px;">
+        <p><strong>Contexte :</strong><br>
+        Dans le cadre de la première année de BTS SIO SISR, un Projet Personnalisé Encadré (PPE) a été réalisé sur une période de 4 semaines, en avril 2017, par groupe de trois étudiants.
+        Le projet porte sur les besoins du laboratoire pharmaceutique fictif Galaxy Swiss Bourdin (GSB), qui souhaite centraliser la gestion des comptes-rendus de visite ainsi que les frais professionnels engagés par ses visiteurs médicaux. Pour cela, le laboratoire a décidé de développer en interne une application web sécurisée, intitulée GSB-AppliFrais, hébergée sur sa propre infrastructure réseau.
+        Cette application permettra à l’ensemble de la force commerciale (visiteurs médicaux) de saisir les comptes-rendus et frais liés à leurs déplacements (hébergement, restauration, transport…), mais également aux équipes comptables de valider et mettre en paiement ces frais via un module d’administration sécurisé.
+        </p>
+
+        <p><strong>Objectifs et contraintes techniques :</strong><br>
+        Interface sécurisée, hébergement en interne, segmentation réseau (DMZ/PROD), sécurisation SSL/TLS, accès différencié selon les profils (visiteur, comptable, développeur).</p>
+
+        <p><strong>Développement et déploiement :</strong><br>
+        Installation manuelle d’Apache, PHP, MySQL, configuration réseau (DNS, FTP, HTTPS), tests et documentation.</p>
+
+        <p><strong>Compétences mobilisées :</strong></p>
+        <ul>
+            <li>A1.1.1 - Analyse du cahier des charges d’un service à produire</li>
+            <li>A1.1.3 - Étude des exigences liées à la qualité attendue d’un service</li>
+            <li>A1.2.4 - Détermination des tests nécessaires à la validation d’un service</li>
+            <li>A1.3.1 - Test d’intégration et d’acceptation d’un service</li>
+            <li>A1.3.3 - Accompagnement de la mise en place d’un nouveau service</li>
+            <li>A1.3.4 - Déploiement d’un service</li>
+            <li>A1.4.1 - Participation à un projet</li>
+            <li>A4.1.1 - Proposition d’une solution applicative</li>
+            <li>A4.1.8 - Réalisation des tests nécessaires à la validation d’éléments adaptés ou développés</li>
+         </ul>
+    </article>
+
+    <article>
+        <h3>Projet Docker</h3>
+        <img src="docker.png" alt="Projet Docker" style="width: 200px; height: auto; border-radius: 10px;">
+        <p><strong>Contexte :</strong><br>
+        Dans ce projet réalisé en groupe de trois, nous avons conçu une infrastructure à haute disponibilité en utilisant Docker. L’objectif était de répartir la charge entre plusieurs serveurs web via un répartiteur de charge, puis d’y ajouter une couche de gestion de base de données avec MariaDB. Chaque composant de l’architecture (serveurs web, base de données, répartiteur) a été déployé dans un conteneur Docker indépendant. Une page PHP permettait d’afficher dynamiquement le nom de chaque serveur à l’aide de la fonction gethostname() pour vérifier la répartition. La base de données MariaDB contenait une table personne, consultable via une autre page PHP connectée à cette base. Toute l’infrastructure a été documentée et testée, notamment en cas de panne d’un des serveurs web.</p>
+
+        <p><strong>Missions :</strong><br>
+        Installation Docker, configuration HAProxy, MariaDB, réseau personnalisé, pages PHP dynamiques, documentation complète.</p>
+
+        <p><strong>Compétences mobilisées :</strong></p>
+        <ul>
+            <li>A1.1.1 / C1.1.1.2 – Analyse des besoins</li>
+            <li>A1.2.1 / C1.2.1.1 – Élaboration de solution technique</li>
+            <li>A1.3.4 / C1.3.4.3 – Déploiement de service</li>
+            <li>A1.4.1 / C1.4.1.2 – Suivi de projet</li>
+            <li>A1.4.2 / C1.4.2.2 – Analyse des écarts</li>
+            <li>A5.2.2 / C5.2.2.4 – Veille technologique</li>
+        </ul>
+    </article>
+</section>
+
+
+    <!-- Section Contact -->
+    <section id="contact" class="content-section" style="display: none;">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" name="name" placeholder="Votre nom">
+            <input type="email" name="email" placeholder="Votre email">
+            <textarea name="message" placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <div class="contact-info">
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>yoann44.brochard@laposte.net</p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>06.83.30.92.95</p>
+    </section>
+
+    <!-- Section veille -->
+	<section id="veille" class="content-section">
+		<h2>Veille Technologique</h2>
+		<div style="max-width: 800px; background-color: #1B263B; padding: 20px; border-radius: 10px; margin: 0 auto 20px auto;">
+			<h3>Question</h3>
+			<p>Quels sont les avantages et les défis de la migration vers les réseaux 6G dans les entreprises d'ici 2030 ?</p>
+		</div>
+		<div style="max-width: 800px; background-color: #1B263B; padding: 20px; border-radius: 10px; margin: 0 auto;">
+			<h3>Réponse</h3>
+			<p>La 6G promet des vitesses de connexion ultra-rapides, une latence quasi nulle et une connectivité massive pour les objets intelligents. Ces atouts pourraient révolutionner l’industrie, la santé et la communication d’entreprise. Mais les défis sont importants : coûts d’infrastructure, sécurité des données accrues, compatibilité des systèmes actuels et incertitudes sur les normes à venir. La migration nécessitera donc anticipation et stratégie.</p>
+		</div>
+	</section>
+
+    <!-- Section Stages -->
+    <section id="stages" class="content-section" style="display: none;">
+        <h2>Mon stage de 1er année</h2>
+        <iframe src="SISR25_BROCHARD_Yoann_RapportStage_Stage1.pdf" width="90%" height="600px" style="border: none; border-radius: 10px;"></iframe>
+    </section>
+
+    <!-- Section Formations -->
+    <section id="formations" class="content-section" style="display: none;">
+        <h2>Mon Parcours</h2>
+        <div class="timeline-container">
+            <div class="timeline-text top-left">
+                <h3>Bac Général</h3>
+                <p>Option SES, NCI et Mathématiques – Obtenu en 2024</p>
+            </div>
+            <div class="timeline-line"></div>
+            <div class="timeline-text bottom-right">
+                 <h3>BTS SIO SISR</h3>
+                 <p>En cours depuis 2024 – Spécialisation en Réseaux et Systèmes</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section CV -->
+    <section id="cv" class="content-section" style="display: none;">
+        <h2>Mon CV</h2>
+        <iframe src="CV_Technicien info_BTS SIO.pdf" width="90%" height="600px" style="border: none; border-radius: 10px;"></iframe>
+    </section>
+
+    <!-- Section tableau de synthèse -->
+    <section id="excel" class="content-section" style="display: none;">
+        <h2>Tableau de Synthèse</h2>
+        <p>Voici un aperçu du tableau utilisé :</p>
+        <p><a href="Brochard_Yoann - Tableau de synthèse.xlsx" download>Télécharger le fichier Excel</a></p>
+        <h3>Mon Document Synthèse explicatif</h3>
+        <iframe src="Document_tableau_de_synthèse.pdf" width="90%" height="600px" style="border: none; border-radius: 10px;"></iframe>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>Portfolio créé par Yoann BROCHARD - BTS SIO</p>
+        <small><a href="https://linkedin.com/in/votre-profil">LinkedIn</a></small>
+    </footer>
+
+    <script>
+        // Fonction pour afficher une section
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+
+            // Sauvegarder la section actuelle dans localStorage
+            localStorage.setItem('currentSection', sectionId);
+        }
+
+        // Charger la section actuelle depuis localStorage au chargement de la page
+        window.onload = function () {
+            var currentSection = localStorage.getItem('currentSection');
+            if (currentSection) {
+                showSection(currentSection);
+            } else {
+                showSection('home');
+            }
+        };
+    </script>
+    </div>
+</body>
+</html>
