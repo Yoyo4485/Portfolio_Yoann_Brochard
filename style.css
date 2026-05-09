@@ -219,16 +219,7 @@ form button:hover {
     color: #f8f8f8; /* Couleur du texte */
     text-align: center;
 }
-/* Restaure les listes à puces correctement */
-.content-section ul {
-    list-style-type: disc;
-    padding-left: 25px;
-    margin-top: 10px;
-}
 
-.content-section li {
-    margin-bottom: 6px;
-}
 /* Section Contact */
 #contact-box {
     background-image: url('contact.jpg');
@@ -287,4 +278,15 @@ section#projets img {
   bottom: 0;
   right: 0;
   text-align: right;
+}
+
+/* Restaure les listes à puces correctement */
+.content-section ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.content-section li {
+    margin-bottom: 6px;
 }
