@@ -232,8 +232,58 @@ Des exigences importantes sont présentes, notamment en matière de sécurité, 
 
 Enfin, le projet s’inscrit dans une logique professionnelle avec une organisation en plusieurs phases, incluant l’analyse des besoins, la mise en place des solutions techniques et la validation de leur bon fonctionnement.</p>
 
-        <p><strong>Missions :</strong><br>
-        organisation du projet et analyse du cahier des charges,Maquette de l'infrastructure MSC Croisière avec Packet Tracer,mise en place du routeur et du switch,mise en place de l'AD,ACL et borne Wifi,mise en place de GLPI,mise en place de la supervision avec Nagios,mise en place d'un SIEM : WAZUH,Mise en place d'une solution de déploiement de logiciels : ANSIBLE.</p>
+        <p><strong>Objectif du projet :</strong><br>
+        L’objectif du projet MSC Croisières était de concevoir et mettre en place une infrastructure réseau complète et sécurisée destinée au pont n°7 d’un paquebot. Le projet devait permettre de répondre aux besoins du personnel et des passagers à travers la mise en place de plusieurs services réseaux et systèmes : segmentation des réseaux en VLAN, gestion du Wifi, routage, NAT, Active Directory, supervision, cybersécurité et automatisation.</p>
+
+		
+        <p><strong>Étapes du projet :</strong><br>
+		<ul>
+			<li>Sprint 1 : Organisation du projet et analyse du cahier des charges
+			Analyse des besoins, répartition des tâches, mise en place de Trello et du stockage partagé, préparation des documents techniques et organisation du travail d’équipe.</li>
+
+			<li>Sprint 2 : Maquette de l’infrastructure avec Packet Tracer
+			Conception de la maquette réseau virtuelle avec les VLAN, le Wifi, le DHCP et les tests de communication réseau.</li>
+		
+			<li>Sprint 3 : Mise en place du routeur et du switch
+			Configuration des équipements réseau physiques, du routage, du NAT, des VLAN ainsi que réalisation du schéma physique de l’infrastructure.</li>
+
+			<li>Sprint 4 : Mise en place de l’Active Directory
+			Déploiement du serveur Active Directory, création des utilisateurs, groupes, partages réseau et intégration des postes au domaine.</li>
+
+			<li>Sprint 5 : ACL et réseau Wifi
+			Configuration des ACL de sécurité, mise en place des réseaux Wifi et séparation des accès entre les différents utilisateurs.</li>
+
+			<li>Sprint 6 : Mise en place de GLPI
+			Installation et configuration de GLPI pour la gestion de parc informatique, l’inventaire et la gestion des tickets.</li>
+
+			<li>Sprint 7 : Authentification Radius
+			Mise en place d’un serveur Radius afin de sécuriser l’authentification Wifi des utilisateurs.</li>
+
+			<li>Sprint 8 : Intégration d’une station Linux dans le domaine
+			Configuration et intégration d’une machine Linux dans l’environnement Active Directory.</li>
+
+			<li>Sprint 9 : Scripts PowerShell
+			Création de scripts PowerShell permettant d’automatiser certaines tâches d’administration et de gestion des partages.</li>
+
+			<li>Sprint 10 : Mise en place de Stormshield
+			Déploiement et configuration du firewall Stormshield afin de renforcer la sécurité réseau.</li>
+
+			<li>Sprint 11 : VPN SSL et sécurité réseau
+			Configuration du VPN SSL et amélioration de la sécurisation des communications réseau.</li>
+
+			<li>Sprint 12 : Supervision avec Nagios
+			Mise en place de Nagios afin de superviser les équipements et services de l’infrastructure.</li>
+
+			<li>Sprint 13 : SIEM Wazuh
+			Déploiement de Wazuh pour la surveillance de sécurité et l’analyse des événements système et réseau.</li>
+
+			<li>Sprint 14 : Déploiement automatisé avec Ansible
+			Mise en place d’Ansible afin d’automatiser le déploiement de logiciels et certaines tâches d’administration.</li>
+
+		</ul>
+		</p>
+		<p><strong>Étapes du projet :</strong><br>
+		<img src="Diagramme_Dejardin_G4.drawio_page-0001.jpg" alt="Image architecture Croisière" style="width: 400px; height: auto; border-radius: auto;">
 		<iframe src="Phase_d_etude_lettre_de_mission_v2.pdf" width="90%" height="600px" style="border: none; border-radius: 10px;"></iframe>
     </article>
 </section>
