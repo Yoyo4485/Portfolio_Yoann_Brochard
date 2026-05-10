@@ -217,7 +217,7 @@ form button:hover {
     justify-content: right;
     align-items: right;
     color: #f8f8f8; /* Couleur du texte */
-    text-align: center;
+    text-align: right;
 }
 
 /* Section Contact */
