@@ -131,11 +131,44 @@ Javascript, Linux.</li>
         Cette application permettra à l’ensemble de la force commerciale (visiteurs médicaux) de saisir les comptes-rendus et frais liés à leurs déplacements (hébergement, restauration, transport…), mais également aux équipes comptables de valider et mettre en paiement ces frais via un module d’administration sécurisé.
         </p>
 
-        <p><strong>Objectifs et contraintes techniques :</strong><br>
-        Interface sécurisée, hébergement en interne, segmentation réseau (DMZ/PROD), sécurisation SSL/TLS, accès différencié selon les profils (visiteur, comptable, développeur).</p>
+        <p><strong>Objectifs du projet:</strong><br>
+       L’objectif du projet était de mettre en place une infrastructure complète permettant le fonctionnement de l’application GSB, en répondant à plusieurs besoins techniques :
+		<ul>
+   			<li>Concevoir une architecture réseau séparant les environnements DMZ et PROD</li>
+    		<li>Mettre en place un serveur web sécurisé accessible en HTTPS</li>
+    		<li>Installer et configurer un serveur de base de données dédié</li>
+    		<li>Configurer un serveur DNS pour la résolution des noms internes</li>
+			<li>Mettre en place un serveur FTP pour les mises à jour de l’application</li>
+    		<li>Assurer la communication sécurisée entre les différents services</li>
+			<li>Appliquer des règles de sécurité et de restriction d’accès selon les rôles utilisateurs</li>
+		</ul>
+		Mais aussi l'objectif était de nous mettre en groupe de 4 afin de se rapprocher d’un fonctionnement professionnel. Le travail était réparti entre les différents membres de l’équipe avec des échanges réguliers pour suivre l’avancement du projet, partager les solutions trouvées et coordonner les différentes tâches à réaliser. Cette organisation nous a permis de développer le travail collaboratif ainsi qu’une approche proche des méthodes utilisées en entreprise.
+		</p>
 
-        <p><strong>Développement et déploiement :</strong><br>
-        Installation manuelle d’Apache, PHP, MySQL, configuration réseau (DNS, FTP, HTTPS), tests et documentation.</p>
+        <p><strong>Architecture du projet :</strong><br>
+        Afin de répondre aux besoins de l’application, l’infrastructure mise en place comprenait plusieurs machines virtuelles ayant chacune un rôle précis :
+		<ul>
+			<li>Un serveur Web Apache pour héberger l’application</li>
+			<li>Un serveur de base de données MySQL/MariaDB</li>
+			<li>Un serveur DNS pour la résolution des noms de domaine</li>
+			<li>Un serveur FTP permettant les transferts de fichiers internes</li>
+			<li>Des équipements réseau assurant la communication et la segmentation des réseaux</li>
+			<li>Une machine cliente permettant de tester les différents services déployés</li>
+		</ul>
+		L’ensemble de l’infrastructure a été virtualisé afin de faciliter les tests, le déploiement et l’administration des différents services.
+		</p>
+		<p><strong>Étapes du projet :</strong><br>
+		Le projet a été réalisé en plusieurs phases :
+		<ul>
+			<li>Analyse du cahier des charges et définition des besoins</li>
+			<li>Mise en place et configuration des machines virtuelles</li>
+			<li>Configuration du réseau, du routage et du service DNS</li>
+			<li>Installation et sécurisation du serveur web et de la base de données</li>
+			<li>Mise en place du protocole HTTPS et des accès sécurisés</li>
+			<li>Configuration du serveur FTP pour les échanges internes</li>
+			<li>Réalisation des tests de fonctionnement et de sécurité</li>
+			<li>Documentation de l’infrastructure et des différentes configurations réalisées</li>
+		</ul>
 		<iframe src="GSB-Projet_ArchiSite-Fiche_Descriptive-2024.pdf" width="90%" height="600px" style="border: none; border-radius: 10px;"></iframe>
 
     </article>
@@ -147,7 +180,8 @@ Javascript, Linux.</li>
         Dans ce projet réalisé en groupe de trois, nous avons conçu une infrastructure à haute disponibilité en utilisant Docker. L’objectif était de répartir la charge entre plusieurs serveurs web via un répartiteur de charge, puis d’y ajouter une couche de gestion de base de données avec MariaDB. Chaque composant de l’architecture (serveurs web, base de données, répartiteur) a été déployé dans un conteneur Docker indépendant. Une page PHP permettait d’afficher dynamiquement le nom de chaque serveur à l’aide de la fonction gethostname() pour vérifier la répartition. La base de données MariaDB contenait une table personne, consultable via une autre page PHP connectée à cette base. Toute l’infrastructure a été documentée et testée, notamment en cas de panne d’un des serveurs web.</p>
 
         <p><strong>Missions :</strong><br>
-        Installation Docker, configuration HAProxy, MariaDB, réseau personnalisé, pages PHP dynamiques, documentation complète.</p>
+        Installation Docker, configuration HAProxy, MariaDB, réseau personnalisé, pages PHP dynamiques, documentation complète.
+		</p>
 		<iframe src="contexte_projet_docker_1SI0_2025.pdf" width="90%" height="600px" style="border: none; border-radius: 10px;"></iframe>
 		
     </article>
